@@ -13,9 +13,7 @@ const Contact = () => {
       <p>Let's connect for projects or job opportunities</p>
 
       <div className="contact-container">
-
         <div className="contact-info">
-
           <div className="info-item">
             <EmailIcon className="icon" />
             <a href="mailto:jilani@example.com">jilani@example.com</a>
@@ -46,13 +44,13 @@ const Contact = () => {
           <input type="text" placeholder="Your Name" required />
           <input type="email" placeholder="Your Email" required />
           <textarea placeholder="Your Message" required></textarea>
-          <button type="submit" onClick={()=>alert('sent your message !! ')}>Send Message</button>
+          <button type="submit" onClick={() => alert("sent your message !! ")}>
+            Send Message
+          </button>
         </form>
-
       </div>
     </section>
   );
 };
 
 export default Contact;
-
