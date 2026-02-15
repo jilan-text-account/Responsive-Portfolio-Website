@@ -13,7 +13,7 @@ function Home() {
         {/* Description */}
         <div className="home-content">
           <h1>
-            Hi, I'm <span>Nayak Khaja</span>
+            Hi, I'm <span>Naik jillani</span>
           </h1>
           <h3>React Developer</h3>
           <p>
@@ -32,3 +32,4 @@ function Home() {
 }
 
 export default Home;
+
