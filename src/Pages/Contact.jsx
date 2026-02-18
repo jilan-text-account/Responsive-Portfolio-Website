@@ -8,11 +8,11 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Contact = () => {
   return (
-    <section className="contact-section" id="contact">
+    <div className="contact-container" id="contact">
       <h2>Contact Me</h2>
       <p>Let's connect for projects or job opportunities</p>
 
-      <div className="contact-container">
+      <div className="contact">
         <div className="contact-info">
           <div className="info-item">
             <EmailIcon className="icon" />
@@ -49,7 +49,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-    </section>
+    </div>
   );
 };
 

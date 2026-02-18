@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 const projects = [
   {
     title: "Full Stack Task Manager",
@@ -20,7 +22,7 @@ const projects = [
 
 function Projects() {
   return (
-    <section className="projects">
+    <div className="projects-container">
       <h1>My Projects</h1>
       <div className="project-grid">
         {projects.map((project, index) => (
@@ -31,8 +33,8 @@ function Projects() {
             <p>{project.description}</p>
 
             <div className="tech-stack">
-              {project.tech.map((t, i) => (
-                <span key={i}>{t}</span>
+              {project.tech.map((tech, index) => (
+                <span key={index}>{tech}</span>
               ))}
             </div>
 
@@ -47,7 +49,10 @@ function Projects() {
           </div>
         ))}
       </div>
-    </section>
+      <button className="next-btn">
+        <Link to="/Contact">Next</Link>
+      </button>
+    </div>
   );
 }
 

@@ -50,7 +50,7 @@ function App() {
         </ul>
       </div>
       <div className={isOpen ? "container" : "active-container"}>
-        <Routes>
+        <Routes className="main">
           <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/Skills" element={<Skills />} />
